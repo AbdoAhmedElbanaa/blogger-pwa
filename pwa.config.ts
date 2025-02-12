@@ -2,13 +2,13 @@ import type { Config } from './types';
 
 export default {
   id: '/',
-  name: 'My Blog',
-  shortName: 'My Blog',
-  description: 'My blog description goes here...',
+  name: 'البنا للمعلومات',
+  shortName: 'ElbanaNet',
+  description: 'عالمك نحو تقنيات حديثة وأساليب ومهارات جديدة كليًا في مجال الإنترنت.',
   direction: 'auto',
-  language: 'en-US',
+  language: 'ar-EG',
   backgroundColor: '#fff',
-  themeColor: '#fff',
+  themeColor: '#ea6f20',
   display: 'standalone',
   orientation: 'natural',
   scope: '/',
@@ -17,27 +17,27 @@ export default {
   preferRelatedApplications: false,
   shortcuts: [
     {
-      name: 'Shortcut 1',
-      shortName: 'Shortcut 1',
-      description: 'Shortcut 1 description goes here...',
-      url: '/search/label/shortcut-1?utm_source=homescreen',
+      name: 'الصفحة الرئيسية ',
+      shortName: 'Home',
+      description: 'الصفحه الرئيسيسة',
+      url: '/?utm_source=homescreen',
     },
     {
-      name: 'Shortcut 2',
-      shortName: 'Shortcut 2',
-      description: 'Shortcut 2 description goes here...',
-      url: '/search/label/shortcut-2?utm_source=homescreen',
+      name: 'أخر المقالات',
+      shortName: 'Last Posts',
+      description: 'تابع احدث المقالات ',
+      url: '/search/?utm_source=homescreen',
     },
   ],
   pwa: {
     logs: true,
     // OneSignal is not available if you are not using cloudflare workers
-    oneSignalEnabled: false,
+    oneSignalEnabled: true,
     oneSignalConfig: {
-      appId: '********-****-****-****-************',
+      appId: '4fb46e1f-0311-4d85-a91c-36f5532d973a',
       allowLocalhostAsSecureOrigin: true,
     },
   },
   // Please replace with your blog url if you are using CDN (JsDelivr)
-  origin: 'https://hello-example.blogspot.com',
+  origin: 'https://www.elbana.net/',
 } satisfies Config;
