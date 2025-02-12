@@ -6,7 +6,7 @@ export default {
   shortName: 'ElbanaNet',
   description: 'عالمك نحو تقنيات حديثة وأساليب ومهارات جديدة كليًا في مجال الإنترنت.',
   direction: 'auto',
-  language: 'ar-EG',
+  language: 'ar',
   backgroundColor: '#fff',
   themeColor: '#ea6f20',
   display: 'standalone',
