@@ -1,5 +1,5 @@
 /**
- * This is auto generated metadata file, generated at: Wed Feb 12 2025 23:21:25 GMT+0000 (Coordinated Universal Time)
+ * This is auto generated metadata file, generated at: Wed Feb 12 2025 23:29:50 GMT+0000 (Coordinated Universal Time)
  * Prevent making any changes here
  */
 
@@ -27,5 +27,5 @@ export interface Metadata {
 }
 
 export const metadata = JSON.parse(
-  '{"github":{"repository":"AbdoAhmedElbanaa/blogger-pwa","branch":"main"},"pwa":{"oneSignalEnabled":false,"oneSignalSDK":"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js","oneSignalConfig":{"appId":"********-****-****-****-************","allowLocalhostAsSecureOrigin":true},"logs":true,"serviceWorker":{"source":"/app/serviceworker.js","scope":"/"}},"build":{"hash":"yhLi1Pn7sWUX0FEbIDYPi"}}',
+  '{"github":{"repository":"AbdoAhmedElbanaa/blogger-pwa","branch":"main"},"pwa":{"oneSignalEnabled":false,"oneSignalSDK":"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js","oneSignalConfig":{"appId":"********-****-****-****-************","allowLocalhostAsSecureOrigin":true},"logs":true,"serviceWorker":{"source":"/app/serviceworker.js","scope":"/"}},"build":{"hash":"iseHLDWTWc4q2w9uXEV0W"}}',
 ) as Metadata;
