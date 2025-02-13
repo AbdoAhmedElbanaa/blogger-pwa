@@ -2,169 +2,172 @@
 <html>
 
 <head>
-  <!--[ Meta Tags ]-->
-  <title>Something went wrong!</title>
-  <meta charset="UTF-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <title>عذرًا، حدث خطأ ما!</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 
-  <!--[ Favicon ]-->
-  <link href="/app/icons/favicon.ico" rel="icon" type="image/x-icon" />
-  <link href="/app/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/app/icons/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/app/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-  <!--[ Styles ]-->
-  <style>
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-    }
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
 
-    /* Content */
-    body {
-      margin: 0;
-      background: #fafafa;
-      color: #1f1f1f;
-      font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-      font-weight: 400;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
+        /* Content */
+        body {
+            margin: 0;
+            background: #f3f7ff; /* لون خلفية أزرق فاتح ولطيف */
+            color: #333; /* لون نص أغمق قليلاً للقراءة الأفضل */
+            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+            font-weight: 400;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            display: flex; /* إضافة Flexbox لمركزة المحتوى بسهولة */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* تأكد من أن الصفحة تغطي كامل الارتفاع */
+        }
 
-    body:focus {
-      outline: none !important;
-    }
+        body:focus {
+            outline: none !important;
+        }
 
-    .main-wrapper {
-      min-width: 100vw;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px;
-    }
+        .main-wrapper {
+            width: 100%; /* تعديل ليناسب الشاشات الصغيرة بشكل أفضل */
+            padding: 20px; /* زيادة المسافة الداخلية قليلاً */
+            text-align: center; /* توسيط النص افتراضيًا */
+        }
 
-    .container {
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      padding: 15px;
-      border-radius: 12px;
-      background: #fff;
-      border: 1px solid #ebebeb;
-    }
+        .container {
+            position: relative;
+            overflow: hidden;
+            padding: 40px 20px; /* زيادة المسافة الداخلية الرأسية والأفقية */
+            border-radius: 15px; /* حواف مدورة أكثر */
+            background: #fff;
+            border: none; /* إزالة الحدود الافتراضية */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* إضافة ظل خفيف */
+        }
 
-    .noIntIcon {
-      padding: 30px;
-    }
+        .noIntIcon {
+            padding: 20px; /* تقليل المسافة الداخلية للأيقونة قليلاً */
+        }
 
-    .noConHead {
-      font-weight: 600;
-      font-size: 1.3rem;
-    }
+        .noConHead {
+            font-weight: 700; /* خط أكثر سمكًا للعنوان */
+            font-size: 1.6rem; /* حجم خط أكبر للعنوان */
+            color: #425466; /* لون عنوان أغمق */
+        }
 
-    .noConDesc {
-      font-size: 16px;
-      line-height: 1.4em;
-      padding-top: 20px;
-      font-weight: 400;
-      opacity: 0.8;
-    }
+        .noConDesc {
+            font-size: 1rem; /* حجم خط أصغر للوصف */
+            line-height: 1.6em; /* تباعد أسطر أكبر للوصف */
+            padding-top: 15px;
+            font-weight: 400;
+            opacity: 0.7; /* تقليل الشفافية قليلاً */
+            color: #5e6c7b; /* لون وصف أغمق */
+        }
 
-    .relCont {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .relCont {
+    padding: 25px;
+    display: inline-flex;
+    justify-content: center;
+}
 
-    .relCont {
-      padding: 30px;
-    }
+        .reload-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px; /* حجم أصغر للزر */
+            height: 60px; /* حجم أصغر للزر */
+            background-color: #fff;
+            outline: none;
+            border: 1px solid #e0e0e0; /* لون حدود أفتح */
+            border-radius: 50%; /* زر دائري تمامًا */
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out; /* إضافة تأثيرات انتقال */
+        }
 
-    .reload-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 66px;
-      height: 66px;
-      background-color: #fff;
-      outline: none;
-      border: 1px solid #ebebeb;
-      border-radius: 690px;
-      cursor: pointer;
-    }
+        .reload-button:hover {
+            background-color: #f0f0f0; /* لون خلفية أفتح عند التحويم */
+            transform: scale(1.1); /* تكبير طفيف عند التحويم */
+        }
 
-    .reload-button:hover {
-      background-color: #fafafa;
-    }
+        .icon {
+            width: 22px; /* حجم أيقونة أصغر */
+            height: 22px; /* حجم أيقونة أصغر */
+            display: inline-block;
+            opacity: 0.9; /* زيادة الشفافية قليلاً */
+        }
 
-    .icon {
-      content: "";
-      width: 25px;
-      height: 25px;
-      display: inline-block;
-    }
+        .icon-lg {
+            width: 45px; /* حجم أيقونة أكبر */
+            height: 45px; /* حجم أيقونة أكبر */
+            display: inline-block;
+        }
 
-    .icon-lg {
-      content: "";
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-    }
+        .icon.reload {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23788796' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='23 4 23 10 17 10'/><path d='M20.49 15a9 9 0 1 1-2.12-9.36L23 10'/></svg>"); /* لون أيقونة أغمق قليلاً */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
 
-    .icon.reload {
-      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239dabc0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='23 4 23 10 17 10'/><path d='M20.49 15a9 9 0 1 1-2.12-9.36L23 10'/></svg>") center / 25px no-repeat;
-    }
+        .icon-lg.wifi-off {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23788796' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='1' y1='1' x2='23' y2='23'/><path d='M16.72 11.06A10.94 10.94 0 0 1 19 12.55'/><path d='M5 12.55a10.94 10.94 0 0 1 5.17-2.39'/><path d='M10.71 5.05A16 16 0 0 1 22.58 9'/><path d='M1.42 9a15.91 15.91 0 0 1 4.7-2.88'/><path d='M8.53 16.11a6 6 0 0 1 6.95 0'/><line x1='12' y1='20' x2='12.01' y2='20'/></svg>"); /* لون أيقونة أغمق قليلاً */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
 
-    .icon-lg.wifi-off {
-      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f1f1f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='1' y1='1' x2='23' y2='23'/><path d='M16.72 11.06A10.94 10.94 0 0 1 19 12.55'/><path d='M5 12.55a10.94 10.94 0 0 1 5.17-2.39'/><path d='M10.71 5.05A16 16 0 0 1 22.58 9'/><path d='M1.42 9a15.91 15.91 0 0 1 4.7-2.88'/><path d='M8.53 16.11a6 6 0 0 1 6.95 0'/><line x1='12' y1='20' x2='12.01' y2='20'/></svg>") center / 50px no-repeat;
-    }
+        @media screen and (min-width: 401px) {
+            .container {
+                min-width: 400px;
+            }
+        }
 
-    @media screen and (min-width: 401px) {
-      .container {
-        min-width: 400px;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .container {
-        width: 100%;
-      }
-    }
-  </style>
+        @media screen and (max-width: 400px) {
+            .container {
+                width: 95%; /* تقليل العرض قليلًا في الشاشات الصغيرة */
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="main-wrapper notranslate">
-    <div class="container">
-      <div class="noIntIcon">
-        <i class="icon-lg wifi-off"></i>
-      </div>
-      <div class="noConHead">Something went wrong!</div>
+    <div class="main-wrapper notranslate">
+        <div class="container">
+            <div class="noIntIcon">
+                <i class="icon-lg wifi-off"></i>
+            </div>
+            <div class="noConHead">عذرًا، حدث خطأ ما!</div>
+            <div class="noConDesc">قد يكون هناك مشكلة في الاتصال بالإنترنت. <br> يرجى التحقق من اتصالك وحاول مرة أخرى.</div>
 
-      <div class="relCont">
-        <button class="reload-button">
-          <i class="icon reload"></i>
-        </button>
-      </div>
+            <div class="relCont">
+                <button class="reload-button" title="إعادة تحميل الصفحة">
+                    <i class="icon reload"></i>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!--[ Script ]-->
-  <script>
-    document.querySelector(".reload-button")
-      .addEventListener("click", () => {
-        window.location.reload();
-      });
-    window.addEventListener("online", () => {
-      window.location.reload();
-    });
-  </script>
+    <script>
+        document.querySelector(".reload-button")
+            .addEventListener("click", () => {
+                window.location.reload();
+            });
+        window.addEventListener("online", () => {
+            window.location.reload();
+        });
+    </script>
 </body>
 
 </html>
