@@ -5,16 +5,16 @@
   "description": "Build a PWA for your Blogger Site",
   "license": "MIT",
   "author": {
-    "name": "Deo Kumar",
-    "url": "https://github.com/kumardeo"
+    "name": "AbdoAhmedElbanaa",
+    "url": "https://github.com/AbdoAhmedElbanaa"
   },
-  "homepage": "https://github.com/kumardeo/blogger-pwa",
+  "homepage": "https://github.com/AbdoAhmedElbanaa/blogger-pwa",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kumardeo/blogger-pwa"
+    "url": "https://github.com/AbdoAhmedElbanaa/blogger-pwa"
   },
   "bugs": {
-    "url": "https://github.com/kumardeo/blogger-pwa/issues"
+    "url": "https://github.com/AbdoAhmedElbanaa/blogger-pwa/issues"
   },
   "packageManager": "npm@10.9.2",
   "type": "module",
