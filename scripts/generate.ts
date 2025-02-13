@@ -71,7 +71,7 @@ const OUT_METATAGS_NO_SPLASH = `${OUT_DIR}/pwa-metatags-no-splash.html`;
 const OUT_CDN_METATAGS_NO_SPLASH = `${OUT_DIR}/cdn-metatags-no-splash.html`;
 const BUILD_HASH = nanoid();
 
-log('✨ Blogger PWA Builder by Fineshop Design');
+log('✨ Blogger PWA Builder by ElbanaNet');
 log(clc.redBright('-----------------------------------------\n'));
 
 /* Write metadata ts */
